@@ -5,7 +5,7 @@ public class soapMovment : MonoBehaviour
 {
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private float launchForce = 10f;
-    [SerializeField] private float lineLength = 2f;
+    [SerializeField] private float lineLength = 0.5f;
     
     private LineRenderer _lineRenderer;
     private Camera mainCamera;
@@ -14,7 +14,7 @@ public class soapMovment : MonoBehaviour
     private Vector3 worldMousePos;
     private Vector3 direction;
     
-    private bool chargeStart = true;
+    private bool chargeStart = false;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -37,32 +37,31 @@ public class soapMovment : MonoBehaviour
         
         _lineRenderer.SetPosition(0, transform.position); 
         _lineRenderer.SetPosition(1, transform.position + direction * lineLength);
-            
+        rb.linearDamping = Input.GetMouseButton(1) ? 0.5f : 1f;
+
+        if (rb.linearVelocity.magnitude > 0.1f ) return;
+        
         if (Input.GetMouseButton(0))
         {
             chargeStart = true;
             Charge();
-            
         }
         else if(chargeStart)
         {
             chargeStart = false;
             Launch();
             launchForce = 5f;
-            lineLength = 0f;
+            lineLength = 0.5f;
         }
-
-
-        rb.linearDamping = Input.GetMouseButton(1) ? 0.5f : 1f;
+        
+        
     }
 
     void Charge()
     {
-        if (launchForce < 15f)
-        {
-            launchForce += 2f * Time.deltaTime;
-            lineLength += Time.deltaTime;
-        }
+        if (!(launchForce < 15f)) return;
+        launchForce += 2f * Time.deltaTime;
+        lineLength += Time.deltaTime;
     }
     
     void Launch()
