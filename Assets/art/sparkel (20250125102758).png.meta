@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f2fdb5aac3e046b4bacf0605f04f7f89
+guid: 380427de618dcb2429b0d65a6e65d3d3
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,12 +48,12 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 1000
-  spriteBorder: {x: 653, y: 525, z: 729, w: 339}
+  spritePixelsToUnits: 512
+  spriteBorder: {x: 0, y: 0, z: 758, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
-  spriteTessellationDetail: -1
+  spriteTessellationDetail: 0
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
@@ -97,28 +97,58 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "s\xE5pe_2"
+      name: Sparkle 1
       rect:
         serializedVersion: 2
-        x: 654
-        y: 527
-        width: 1578
-        height: 957
+        x: 167
+        y: 265
+        width: 606
+        height: 1418
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: e31e75e34e0cf0f4ebd894cb76fb558a
-      internalID: -873878413
+      spriteID: 9b977fa9b291fffd0800000000000000
+      internalID: -2306096809116206663
       vertices: []
       indices: 
       edges: []
       weights: []
-    outline: []
+    - serializedVersion: 2
+      name: Sparkle 2
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 622
+        width: 1011
+        height: 917
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40c12babba03d6f4986133d8442d9f10
+      internalID: 1603363862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline:
+    - - {x: -1303, y: -640}
+      - {x: -686, y: -640}
+      - {x: -673, y: 779}
+      - {x: -1298, y: 774}
+    - - {x: -431, y: -303}
+      - {x: 588, y: -303}
+      - {x: 588, y: 616}
+      - {x: -431, y: 616}
     customData: 
     physicsShape: []
     bones: []
@@ -132,12 +162,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "s\xE5pe_0": -640859200
-      "s\xE5pe_1": -1865187497
-      "s\xE5pe_2": -873878413
-      "s\xE5pe_3": 554497619
-      "s\xE5pe_4": 1189882236
-      "s\xE5pe_5": 1560016143
+      Sparkle 1: -2306096809116206663
+      Sparkle 2: 1603363862
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
