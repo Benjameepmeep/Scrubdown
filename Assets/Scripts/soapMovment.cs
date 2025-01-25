@@ -69,5 +69,6 @@ public class soapMovment : MonoBehaviour
         Vector2 direction = (worldMousePos - transform.position).normalized;
         
         rb.AddForce(direction * launchForce, ForceMode2D.Impulse);
+        rb.AddTorque(Random.Range(-10f,10f));
     }
 }
