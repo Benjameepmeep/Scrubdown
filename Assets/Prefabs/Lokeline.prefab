@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4968503651713789240}
   - component: {fileID: 4891445687064657838}
   - component: {fileID: 7957038870742281257}
-  - component: {fileID: 1586382024997080298}
+  - component: {fileID: 5330433238574659582}
   m_Layer: 0
   m_Name: Lokeline
   m_TagString: Untagged
@@ -105,7 +105,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -154,7 +154,7 @@ CapsuleCollider2D:
   m_Offset: {x: -0.08752322, y: 0.0028452873}
   m_Size: {x: 1.9627533, y: 1.9627533}
   m_Direction: 1
---- !u!114 &1586382024997080298
+--- !u!114 &5330433238574659582
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -163,11 +163,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 7730989025613509032}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d72a6591f11c84141b534481223f46cb, type: 3}
+  m_Script: {fileID: 11500000, guid: 5a4b3cb4a2900c348a248a7018899dfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rigidbody2D: {fileID: 4891445687064657838}
-  capsuleCollider2D: {fileID: 7957038870742281257}
-  initialJump: 100
-  jumpForce: 10
+  speed: 10
   timer: 0
+  goingLeft: 0
+  printEnabled: 0
