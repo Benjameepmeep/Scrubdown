@@ -35,7 +35,9 @@ public class DirtyGuyFinder : MonoBehaviour {
 
             var targetSprite = other.transform.GetComponent<SpriteRenderer>().sprite;
             personData.sprite = targetSprite;
-                
+            
+            Destroy(other.gameObject);
+            
             if (SceneManager.GetSceneByName("ScrubDown").isLoaded) return;
             SceneManager.LoadSceneAsync("ScrubDown", LoadSceneMode.Additive);
         }

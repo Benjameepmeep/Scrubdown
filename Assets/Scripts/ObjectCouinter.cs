@@ -5,10 +5,9 @@ public class ObjectCouinter : MonoBehaviour
 {
     public static int objectCounter;
     
-    
     void Update()
     {
-        if (objectCounter == 0)
+        if (objectCounter == 0 )
         {
             SceneManager.UnloadSceneAsync("ScrubDown");
         }

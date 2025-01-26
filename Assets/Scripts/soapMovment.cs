@@ -1,6 +1,7 @@
 using FMOD.Studio;
 using FMODUnity;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
 
 [RequireComponent(typeof(LineRenderer))]
@@ -57,7 +58,6 @@ public class soapMovment : MonoBehaviour
         _lineRenderer.SetPosition(1, transform.position + direction * lineLength);
         rb.linearDamping = Input.GetMouseButton(1) ? 0.5f : 1f;
 
-
         if (rb.linearVelocity.magnitude > 0.1f)
         {
             bubleInstance.start();
@@ -78,10 +78,24 @@ public class soapMovment : MonoBehaviour
             launchForce = 5f;
             lineLength = 0.5f;
         }
+        
+    }
+    private bool IsEventPlaying()
+    {
+        PLAYBACK_STATE playbackState;
+        
+        eventInstance.getPlaybackState(out playbackState);
+        
+        return playbackState == PLAYBACK_STATE.PLAYING;
     }
 
     void Charge()
     {
+        if (!IsEventPlaying())
+        {
+            eventInstance.start();
+        }
+        
         if (!hassOneshot)
         {
             AudioManager.Instance.PlayOneShot(oneLiners, this.transform.position);
@@ -89,7 +103,7 @@ public class soapMovment : MonoBehaviour
         }
         
         if (!(launchForce < 15f)) return;
-        launchForce += 2f * Time.deltaTime;
+        launchForce += 5f * Time.deltaTime;
         lineLength += Time.deltaTime;
     }
     

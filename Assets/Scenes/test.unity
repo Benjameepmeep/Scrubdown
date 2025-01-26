@@ -1852,9 +1852,10 @@ GameObject:
   - component: {fileID: 368799883}
   - component: {fileID: 368799882}
   - component: {fileID: 368799881}
+  - component: {fileID: 368799885}
   m_Layer: 0
   m_Name: Murphy
-  m_TagString: Untagged
+  m_TagString: dirt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2002,6 +2003,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &368799885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 368799880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcab6110345f550448aab605db3f6bf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &463157255
 GameObject:
   m_ObjectHideFlags: 0
@@ -26351,6 +26364,7 @@ GameObject:
   - component: {fileID: 1316265938}
   - component: {fileID: 1316265937}
   - component: {fileID: 1316265940}
+  - component: {fileID: 1316265941}
   m_Layer: 0
   m_Name: DirtyGuy
   m_TagString: dirt
@@ -26501,6 +26515,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1316265941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1316265936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcab6110345f550448aab605db3f6bf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1354229438
 GameObject:
   m_ObjectHideFlags: 0
@@ -26951,9 +26977,10 @@ GameObject:
   - component: {fileID: 1484161572}
   - component: {fileID: 1484161571}
   - component: {fileID: 1484161570}
+  - component: {fileID: 1484161574}
   m_Layer: 0
   m_Name: Djevelen
-  m_TagString: Untagged
+  m_TagString: dirt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27101,6 +27128,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1484161574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1484161569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcab6110345f550448aab605db3f6bf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1486798180
 GameObject:
   m_ObjectHideFlags: 0
@@ -27113,9 +27152,10 @@ GameObject:
   - component: {fileID: 1486798183}
   - component: {fileID: 1486798182}
   - component: {fileID: 1486798181}
+  - component: {fileID: 1486798185}
   m_Layer: 0
   m_Name: Ushi Sushi
-  m_TagString: Untagged
+  m_TagString: dirt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27263,6 +27303,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1486798185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1486798180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcab6110345f550448aab605db3f6bf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1534616587
 GameObject:
   m_ObjectHideFlags: 0
@@ -27907,6 +27959,37 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.98, y: 19.6791, z: 0}
   m_LocalScale: {x: 1, y: 16.459234, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1611245164
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1611245165}
+  m_Layer: 0
+  m_Name: gameMananger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1611245165
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611245164}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 31.068394, y: 16.719069, z: -0.08876968}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -29096,3 +29179,4 @@ SceneRoots:
   - {fileID: 1484161573}
   - {fileID: 368799884}
   - {fileID: 1486798184}
+  - {fileID: 1611245165}
