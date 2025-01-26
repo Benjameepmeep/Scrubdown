@@ -7,9 +7,11 @@ public class gameManager : MonoBehaviour
     
     void Update()
     {
-        if (caracterCount == 0 && SceneManager.sceneCount <= 2)
+        if (caracterCount == 0)
         {
-            SceneManager.LoadSceneAsync("crds");
+            {
+                 SceneManager.LoadSceneAsync("crds");
+            }
         }
     }
 }

@@ -10,6 +10,7 @@ public class ObjectCouinter : MonoBehaviour
         if (objectCounter == 0 )
         {
             SceneManager.UnloadSceneAsync("ScrubDown");
+            gameManager.caracterCount--;
         }
     }
 }
