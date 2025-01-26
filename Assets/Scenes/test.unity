@@ -184,6 +184,13 @@ MonoBehaviour:
   rb: {fileID: 0}
   launchForce: 10
   lineLength: 5
+  mainThemme:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!212 &25440866
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -526,6 +533,57 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 703b48929a067b24489e4f1124991d59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &232260463
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 232260465}
+  - component: {fileID: 232260464}
+  m_Layer: 0
+  m_Name: AudioManeger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &232260464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232260463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6aa3a789c9f32254f9a7c8beaa657c37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainMenue:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+--- !u!4 &232260465
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232260463}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.8604116, y: 2.8312407, z: -0.10721941}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1316265936
 GameObject:
   m_ObjectHideFlags: 0
@@ -1140,9 +1198,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nonRigidbodyVelocity: 0
   attenuationObject: {fileID: 0}
-  lastFramePosition: {x: 0, y: 0, z: 0}
-  rigidBody: {fileID: 0}
-  rigidBody2D: {fileID: 0}
 --- !u!1 &2091267147
 GameObject:
   m_ObjectHideFlags: 0
@@ -1259,3 +1314,4 @@ SceneRoots:
   - {fileID: 2091267150}
   - {fileID: 1790501460}
   - {fileID: 1316265939}
+  - {fileID: 232260465}

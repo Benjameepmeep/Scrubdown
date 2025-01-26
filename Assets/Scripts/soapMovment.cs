@@ -1,3 +1,5 @@
+using FMOD.Studio;
+using FMODUnity;
 using UnityEngine;
 
 [RequireComponent(typeof(LineRenderer))]
@@ -15,8 +17,14 @@ public class soapMovment : MonoBehaviour
     private Vector3 direction;
     
     private bool chargeStart = false;
+    
+    [SerializeField] private EventReference mainThemme;
+    private EventInstance eventInstance;
     void Start()
     {
+        eventInstance = RuntimeManager.CreateInstance(mainThemme);
+        eventInstance.start();
+        
         rb = GetComponent<Rigidbody2D>();
         _lineRenderer = GetComponent<LineRenderer>();
         
@@ -66,6 +74,8 @@ public class soapMovment : MonoBehaviour
     
     void Launch()
     {
+        RuntimeManager.StudioSystem.setParameterByName("Has_Shot", 1f);
+        
         Vector2 direction = (worldMousePos - transform.position).normalized;
         
         rb.AddForce(direction * launchForce, ForceMode2D.Impulse);
