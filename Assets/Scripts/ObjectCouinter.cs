@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 public class ObjectCouinter : MonoBehaviour
 {
     public static int objectCounter;
@@ -8,7 +10,7 @@ public class ObjectCouinter : MonoBehaviour
     {
         if (objectCounter == 0)
         {
-           
+            SceneManager.UnloadSceneAsync("ScrubDown");
         }
     }
 }

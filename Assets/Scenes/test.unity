@@ -540,7 +540,7 @@ GameObject:
   - component: {fileID: 1316265940}
   m_Layer: 0
   m_Name: DirtyGuy
-  m_TagString: Untagged
+  m_TagString: dirt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -974,9 +974,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1865215325}
   - component: {fileID: 1865215324}
-  - component: {fileID: 1865215323}
   - component: {fileID: 1865215326}
   - component: {fileID: 1865215327}
+  - component: {fileID: 1865215328}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -984,14 +984,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1865215323
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1865215322}
-  m_Enabled: 1
 --- !u!20 &1865215324
 Camera:
   m_ObjectHideFlags: 0
@@ -1134,6 +1126,23 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &1865215328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1865215322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nonRigidbodyVelocity: 0
+  attenuationObject: {fileID: 0}
+  lastFramePosition: {x: 0, y: 0, z: 0}
+  rigidBody: {fileID: 0}
+  rigidBody2D: {fileID: 0}
 --- !u!1 &2091267147
 GameObject:
   m_ObjectHideFlags: 0
