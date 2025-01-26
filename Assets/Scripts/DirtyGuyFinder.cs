@@ -14,6 +14,8 @@ public class DirtyGuyFinder : MonoBehaviour {
     void Start()
     {
         _soapMovment = GetComponent<soapMovment>();
+
+        SceneTransition.CurrentCamera = Camera.main;
     }
     
     void Update()
@@ -39,7 +41,7 @@ public class DirtyGuyFinder : MonoBehaviour {
             Destroy(other.gameObject);
             
             if (SceneManager.GetSceneByName("ScrubDown").isLoaded) return;
-            SceneManager.LoadSceneAsync("ScrubDown", LoadSceneMode.Additive);
+            SceneTransition.LoadScene("ScrubDown", LoadSceneMode.Additive);
         }
     }
     
