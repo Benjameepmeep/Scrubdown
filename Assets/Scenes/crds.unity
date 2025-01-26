@@ -447,7 +447,19 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'credits:
 
-    The guys'
+    Kristian: programer, artist, main menu song, voise actor
+
+    Erlend:
+    musicproduser, foley artist , artist, level desig, fmod
+
+    Benjamin: artist,
+    programer
+
+    Tommy: programer, artist, game design
+
+    Juno: singer
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -512,7 +524,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -708.5962, y: -277.02325, z: -746.50464, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
