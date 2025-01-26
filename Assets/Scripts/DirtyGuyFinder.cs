@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class DirtyGuyFinder : MonoBehaviour {
     [SerializeField] private PersonData personData;
     
-    [SerializeField] private EventReference oneLiners;
     [SerializeField] private EventReference OtherSong;
 
     public EventInstance eventInstance;
@@ -29,7 +28,6 @@ public class DirtyGuyFinder : MonoBehaviour {
     {
         if (other.CompareTag("dirt"))
         {
-            AudioManager.Instance.PlayOneShot(oneLiners, this.transform.position);
             eventInstance = RuntimeManager.CreateInstance(OtherSong);
             eventInstance.start();
 

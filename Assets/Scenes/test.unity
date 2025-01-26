@@ -184,6 +184,13 @@ MonoBehaviour:
   rb: {fileID: 0}
   launchForce: 10
   lineLength: 5
+  oneLiners:
+    Guid:
+      Data1: 1252110308
+      Data2: 1110582306
+      Data3: -1859170931
+      Data4: 231923560
+    Path: event:/Oneliners
   mainThemme:
     Guid:
       Data1: -148004370
@@ -191,6 +198,20 @@ MonoBehaviour:
       Data3: 1431021996
       Data4: -1496253254
     Path: event:/Main music
+  wallHit:
+    Guid:
+      Data1: 2001816237
+      Data2: 1258325706
+      Data3: 1295333818
+      Data4: 1822430134
+    Path: event:/Soap_Bounce
+  buble:
+    Guid:
+      Data1: -1622775795
+      Data2: 1258471601
+      Data3: -28589941
+      Data4: -1584603909
+    Path: event:/Soap_Slide
 --- !u!212 &25440866
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -534,13 +555,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   personData: {fileID: 11400000, guid: b8cd1bfa70f1d9f4cb90b665cea30dc0, type: 2}
-  oneLiners:
-    Guid:
-      Data1: 1252110308
-      Data2: 1110582306
-      Data3: -1859170931
-      Data4: 231923560
-    Path: event:/Oneliners
   OtherSong:
     Guid:
       Data1: -596015393
@@ -624,7 +638,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 32767
   m_Sprite: {fileID: 21300000, guid: 7d579351ba2a2d744a94cfd6d0790827, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -848,7 +862,7 @@ Transform:
   m_GameObject: {fileID: 348867084}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.31, y: 9.92, z: 0}
+  m_LocalPosition: {x: 7.42, y: 9.92, z: 0}
   m_LocalScale: {x: 1, y: 6.470277, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1043,7 +1057,7 @@ Transform:
   m_GameObject: {fileID: 1019642645}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.07, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -115374,7 +115388,7 @@ Transform:
   m_GameObject: {fileID: 1316265936}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.77, y: 6.5, z: 0}
+  m_LocalPosition: {x: -0.42, y: 8.84, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
