@@ -19,7 +19,7 @@ public class soapMovment : MonoBehaviour
     private bool chargeStart = false;
     
     [SerializeField] private EventReference mainThemme;
-    private EventInstance eventInstance;
+    public EventInstance eventInstance;
     void Start()
     {
         eventInstance = RuntimeManager.CreateInstance(mainThemme);
