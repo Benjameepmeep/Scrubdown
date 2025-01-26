@@ -216,6 +216,7 @@ GameObject:
   m_Component:
   - component: {fileID: 246718442}
   - component: {fileID: 246718441}
+  - component: {fileID: 246718443}
   m_Layer: 0
   m_Name: smelyLines  (20250126125930)_2
   m_TagString: Untagged
@@ -293,6 +294,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -48.11}
+--- !u!114 &246718443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246718440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fff023b48f2528a49b84430023a8aa57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sparkle1: {fileID: -2306096809116206663, guid: 380427de618dcb2429b0d65a6e65d3d3, type: 3}
+  sparkle2: {fileID: 1603363862, guid: 380427de618dcb2429b0d65a6e65d3d3, type: 3}
 --- !u!1 &377499134
 GameObject:
   m_ObjectHideFlags: 0
@@ -309,7 +324,7 @@ GameObject:
   - component: {fileID: 377499140}
   m_Layer: 0
   m_Name: "s\xE5pe_2"
-  m_TagString: Untagged
+  m_TagString: soap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -596,7 +611,7 @@ GameObject:
   m_Component:
   - component: {fileID: 437985280}
   - component: {fileID: 437985279}
-  - component: {fileID: 437985278}
+  - component: {fileID: 437985281}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -604,14 +619,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &437985278
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 437985277}
-  m_Enabled: 1
 --- !u!20 &437985279
 Camera:
   m_ObjectHideFlags: 0
@@ -678,6 +685,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &437985281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 437985277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nonRigidbodyVelocity: 0
+  attenuationObject: {fileID: 0}
 --- !u!1 &970018319
 GameObject:
   m_ObjectHideFlags: 0
@@ -688,6 +709,7 @@ GameObject:
   m_Component:
   - component: {fileID: 970018321}
   - component: {fileID: 970018320}
+  - component: {fileID: 970018322}
   m_Layer: 0
   m_Name: smelyLines  (20250126125930)_2 (1)
   m_TagString: Untagged
@@ -765,6 +787,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 47.4}
+--- !u!114 &970018322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970018319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fff023b48f2528a49b84430023a8aa57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sparkle1: {fileID: -2306096809116206663, guid: 380427de618dcb2429b0d65a6e65d3d3, type: 3}
+  sparkle2: {fileID: 1603363862, guid: 380427de618dcb2429b0d65a6e65d3d3, type: 3}
 --- !u!1 &1236246336
 GameObject:
   m_ObjectHideFlags: 0
@@ -912,6 +948,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d59f8d2526b16734c87b308b2c2da6f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _sprites:
+  - {fileID: 462587578, guid: b49e8284d6cbe6147b825910f13a03e4, type: 3}
+  - {fileID: 1726166797, guid: b49e8284d6cbe6147b825910f13a03e4, type: 3}
+  - {fileID: 232085749, guid: b49e8284d6cbe6147b825910f13a03e4, type: 3}
+  - {fileID: -1779987561, guid: b49e8284d6cbe6147b825910f13a03e4, type: 3}
+  - {fileID: -1311958663, guid: b49e8284d6cbe6147b825910f13a03e4, type: 3}
+  - {fileID: -1087077907, guid: b49e8284d6cbe6147b825910f13a03e4, type: 3}
 --- !u!1 &1274125839
 GameObject:
   m_ObjectHideFlags: 0
@@ -995,7 +1038,7 @@ Transform:
   m_GameObject: {fileID: 1274125839}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.5872502, y: -0.35147858, z: 0}
+  m_LocalPosition: {x: -1.35, y: 0.06, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1059,6 +1102,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d59f8d2526b16734c87b308b2c2da6f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _sprites:
+  - {fileID: 462587578, guid: b49e8284d6cbe6147b825910f13a03e4, type: 3}
+  - {fileID: 1726166797, guid: b49e8284d6cbe6147b825910f13a03e4, type: 3}
+  - {fileID: 232085749, guid: b49e8284d6cbe6147b825910f13a03e4, type: 3}
+  - {fileID: -1779987561, guid: b49e8284d6cbe6147b825910f13a03e4, type: 3}
+  - {fileID: -1311958663, guid: b49e8284d6cbe6147b825910f13a03e4, type: 3}
+  - {fileID: -1087077907, guid: b49e8284d6cbe6147b825910f13a03e4, type: 3}
 --- !u!1 &1339584300
 GameObject:
   m_ObjectHideFlags: 0
@@ -1069,6 +1119,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1339584302}
   - component: {fileID: 1339584301}
+  - component: {fileID: 1339584303}
   m_Layer: 0
   m_Name: smelyLines  (20250126125930)_0
   m_TagString: Untagged
@@ -1146,6 +1197,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -25.43}
+--- !u!114 &1339584303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1339584300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fff023b48f2528a49b84430023a8aa57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sparkle1: {fileID: -2306096809116206663, guid: 380427de618dcb2429b0d65a6e65d3d3, type: 3}
+  sparkle2: {fileID: 1603363862, guid: 380427de618dcb2429b0d65a6e65d3d3, type: 3}
 --- !u!1 &1377733794
 GameObject:
   m_ObjectHideFlags: 0
@@ -1293,6 +1358,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d59f8d2526b16734c87b308b2c2da6f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _sprites:
+  - {fileID: 462587578, guid: b49e8284d6cbe6147b825910f13a03e4, type: 3}
+  - {fileID: 1726166797, guid: b49e8284d6cbe6147b825910f13a03e4, type: 3}
+  - {fileID: 232085749, guid: b49e8284d6cbe6147b825910f13a03e4, type: 3}
+  - {fileID: -1779987561, guid: b49e8284d6cbe6147b825910f13a03e4, type: 3}
+  - {fileID: -1311958663, guid: b49e8284d6cbe6147b825910f13a03e4, type: 3}
+  - {fileID: -1087077907, guid: b49e8284d6cbe6147b825910f13a03e4, type: 3}
 --- !u!1 &1431383020
 GameObject:
   m_ObjectHideFlags: 0
@@ -1554,6 +1626,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d59f8d2526b16734c87b308b2c2da6f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _sprites:
+  - {fileID: 462587578, guid: b49e8284d6cbe6147b825910f13a03e4, type: 3}
+  - {fileID: 1726166797, guid: b49e8284d6cbe6147b825910f13a03e4, type: 3}
+  - {fileID: 232085749, guid: b49e8284d6cbe6147b825910f13a03e4, type: 3}
+  - {fileID: -1779987561, guid: b49e8284d6cbe6147b825910f13a03e4, type: 3}
+  - {fileID: -1311958663, guid: b49e8284d6cbe6147b825910f13a03e4, type: 3}
+  - {fileID: -1087077907, guid: b49e8284d6cbe6147b825910f13a03e4, type: 3}
 --- !u!1 &1552529341
 GameObject:
   m_ObjectHideFlags: 0
@@ -1701,6 +1780,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d59f8d2526b16734c87b308b2c2da6f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _sprites:
+  - {fileID: 232085749, guid: b49e8284d6cbe6147b825910f13a03e4, type: 3}
+  - {fileID: -1779987561, guid: b49e8284d6cbe6147b825910f13a03e4, type: 3}
+  - {fileID: -1311958663, guid: b49e8284d6cbe6147b825910f13a03e4, type: 3}
+  - {fileID: -1087077907, guid: b49e8284d6cbe6147b825910f13a03e4, type: 3}
+  - {fileID: 1726166797, guid: b49e8284d6cbe6147b825910f13a03e4, type: 3}
+  - {fileID: 462587578, guid: b49e8284d6cbe6147b825910f13a03e4, type: 3}
 --- !u!1 &1815779345
 GameObject:
   m_ObjectHideFlags: 0
@@ -1755,6 +1841,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1954211691}
   - component: {fileID: 1954211690}
+  - component: {fileID: 1954211692}
   m_Layer: 0
   m_Name: smelyLines  (20250126125930)_3
   m_TagString: Untagged
@@ -1832,6 +1919,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 18.71}
+--- !u!114 &1954211692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1954211689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fff023b48f2528a49b84430023a8aa57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sparkle1: {fileID: -2306096809116206663, guid: 380427de618dcb2429b0d65a6e65d3d3, type: 3}
+  sparkle2: {fileID: 1603363862, guid: 380427de618dcb2429b0d65a6e65d3d3, type: 3}
 --- !u!1 &2115067310
 GameObject:
   m_ObjectHideFlags: 0
@@ -1979,6 +2080,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d59f8d2526b16734c87b308b2c2da6f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _sprites:
+  - {fileID: 462587578, guid: b49e8284d6cbe6147b825910f13a03e4, type: 3}
+  - {fileID: 1726166797, guid: b49e8284d6cbe6147b825910f13a03e4, type: 3}
+  - {fileID: 232085749, guid: b49e8284d6cbe6147b825910f13a03e4, type: 3}
+  - {fileID: -1779987561, guid: b49e8284d6cbe6147b825910f13a03e4, type: 3}
+  - {fileID: -1311958663, guid: b49e8284d6cbe6147b825910f13a03e4, type: 3}
+  - {fileID: -1087077907, guid: b49e8284d6cbe6147b825910f13a03e4, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

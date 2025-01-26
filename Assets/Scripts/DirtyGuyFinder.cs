@@ -17,7 +17,7 @@ public class DirtyGuyFinder : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        SceneManager.LoadScene("ScrubDown");
+        SceneManager.LoadSceneAsync("ScrubDown", LoadSceneMode.Additive);
     }
 }
 
