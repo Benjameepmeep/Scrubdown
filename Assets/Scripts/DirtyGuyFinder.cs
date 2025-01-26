@@ -3,8 +3,9 @@ using FMODUnity;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class DirtyGuyFinder : MonoBehaviour
-{
+public class DirtyGuyFinder : MonoBehaviour {
+    [SerializeField] private PersonData personData;
+    
     [SerializeField] private EventReference oneLiners;
     [SerializeField] private EventReference OtherSong;
 
@@ -33,6 +34,9 @@ public class DirtyGuyFinder : MonoBehaviour
             eventInstance.start();
 
             _soapMovment.eventInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+
+            var targetSprite = other.transform.GetComponent<SpriteRenderer>().sprite;
+            personData.sprite = targetSprite;
                 
             if (SceneManager.GetSceneByName("ScrubDown").isLoaded) return;
             SceneManager.LoadSceneAsync("ScrubDown", LoadSceneMode.Additive);

@@ -533,6 +533,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 703b48929a067b24489e4f1124991d59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  personData: {fileID: 11400000, guid: b8cd1bfa70f1d9f4cb90b665cea30dc0, type: 2}
   oneLiners:
     Guid:
       Data1: 1252110308
