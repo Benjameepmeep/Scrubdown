@@ -1,3 +1,4 @@
+using FMOD.Studio;
 using FMODUnity;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -5,7 +6,10 @@ using UnityEngine.SceneManagement;
 public class DirtyGuyFinder : MonoBehaviour
 {
     [SerializeField] private EventReference oneLiners;
+    [SerializeField] private EventReference OtherSong;
 
+    public EventInstance eventInstance;
+    
     private soapMovment _soapMovment;
     void Start()
     {
@@ -14,18 +18,26 @@ public class DirtyGuyFinder : MonoBehaviour
     
     void Update()
     {
-        
+        if (SceneManager.sceneCount < 2)
+        {
+            eventInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        }
     }
-
+    
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("dirt"))
         {
             AudioManager.Instance.PlayOneShot(oneLiners, this.transform.position);
-            
+            eventInstance = RuntimeManager.CreateInstance(OtherSong);
+            eventInstance.start();
+
+            _soapMovment.eventInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+                
             if (SceneManager.GetSceneByName("ScrubDown").isLoaded) return;
             SceneManager.LoadSceneAsync("ScrubDown", LoadSceneMode.Additive);
         }
     }
+    
 }
 
